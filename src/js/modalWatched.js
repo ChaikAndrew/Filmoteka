@@ -1,7 +1,7 @@
 import addAndRemoveQueue from './add&removeQueue'; // Queue
 import checkPresenceMovieInQueue from './checkPresenceMovieInQueue'; // Queue
 import onOpenMovieCard from './addToWatchedBtn'; // добавила Лера для Watched btn
-import renderMarkupMovieCard from './markapTempllate';
+// import renderMarkupMovieCard from './markapTempllate';
 import getWatched from './getWatched';
 
 const currentPage = document.querySelector('.navigation__btn--current'); //добавили Лера и Саша

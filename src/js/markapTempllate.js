@@ -46,9 +46,9 @@ export default function renderMarkupMovieCard(data) {
                     /></div>
                     <h2 class="movie-info-title"> ${title}</h2>
                     <div class="movie-card__thumb">
-                    <div class="movie-info-list">
+                    <div class="movie-info-list"> 
                         <p class="info-item"> ${genres} </p>  
-<span class "info-item-slash">  &#127902; </span>  
+                        <span class "info-item-slash"> 🍿 </span> 
               <p class="info-item-year">${release_date?.slice(0, 4)}</p>
               </div>
     </li>`;
