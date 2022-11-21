@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+// @import './components/pagination/pagination'
+
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+
+@import './components/header_home/header_home';
+@import './components/home-main/home-main.scss';
+@import './components/home-main/modal-film';
+@import './components/home-main/modal-trailer';
+@import './components/pagination/paginationCustom';
+@import './components/pagination/paginationCustomDark';
+@import './components/main-library/main-library';
+@import './components/header_library/header_library';
+@import './utils/theme';
+@import './utils/scroll';
+@import './components/subscribe/subscribe-window';
+@import './components/subscribe/subscribe-button';
+@import './components/footer/footer';
+@import './components/footer/modal-team';
+@import './components/home-main/animation__text';
+@import './components/spiner';
