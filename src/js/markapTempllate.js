@@ -37,7 +37,7 @@ export default function renderMarkupMovieCard(data) {
               </button>
                 <div class="movie-card__poster-container"> ${
                   poster_path
-                    ? `<img src="https://image.tmdb.org/t/p/w300${poster_path}"`
+                    ? `<img src="https://image.tmdb.org/t/p/w500${poster_path}"`
                     : `<img src="https://yt3.ggpht.com/AAKF_677TIvjFz_9xFF0R6PgiVd0kRpEtY6APSxSDRP65nXg8hkn9NFsz2bRd9_Z37DJ9D_b=s900-c-k-c0x00ffffff-no-rj"`
                 }
                         class="movie-card__poster"
@@ -62,7 +62,7 @@ const gallery = document.querySelector('.gallery');
 
 gallery.addEventListener('click', onYoutubeClick);
 
-const body = document.querySelector('body'); 
+const body = document.querySelector('body');
 let closeModalBtn;
 let backdrop;
 async function onYoutubeClick(evt) {
@@ -87,7 +87,7 @@ async function onYoutubeClick(evt) {
     window.addEventListener('keydown', onKeyDownEscModalClose);
     // const body = document.querySelector('body');
     body.style.overflow = 'hidden';
-    
+
     backdrop.addEventListener('click', onClickBackdrModalClose);
   }
 }
@@ -99,13 +99,12 @@ function createIframe(results) {
   <iframe class="iframe" fullscreen src="https://www.youtube.com/embed/${results}" frameborder="0"></iframe>
   </div></div>`;
   document.body.insertAdjacentHTML('beforeend', iframe);
- closeModalBtn = document.querySelector('.close-modal__trailer');
-backdrop = document.querySelector('.backdrop-trailer');
+  closeModalBtn = document.querySelector('.close-modal__trailer');
+  backdrop = document.querySelector('.backdrop-trailer');
   closeModalBtn.addEventListener('click', closeModalYouTube);
 }
 
 function closeModalYouTube() {
-
   document.querySelector('.backdrop-trailer').remove();
   window.removeEventListener('keydown', onKeyDownEscModalClose);
   body.style.overflow = '';
